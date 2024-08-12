@@ -6,10 +6,10 @@ app = FastAPI()
 with open('actions.json') as json_file:
     data = json.load(json_file)
 
-def get_action_by_codeword(codeword: str):
+def get_action_by_codeword(codeword: int):
     for action in data['actions']:
         if action['codeword'] == codeword:
-            return action
+            return {"codeword": codeword, "action_id": action['id']}
     return None
 
 def get_codewords_by_action_id(action_id):

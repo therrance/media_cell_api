@@ -7,6 +7,10 @@
         {
             "codeword": 5002,
             "id": "thanks"
+        },
+        {
+            "codeword": 5003,
+            "id": "alert"
         }
     ]
 }
